@@ -1,0 +1,691 @@
+//variable declarations
+@color0: #ffffff;
+@color1: #989797;
+@color2: #dddddd;
+@color3: #6d6d6d;
+@color4: #303030;
+@color5: #000000;
+@color6: #63bf27;
+
+@lowResBreakpoint: 320px;
+@maxContainerWidth: 960px;
+@buttonWidth: 312px;
+@reviewHeaderWidth: 400%;
+@maxWidthPercent: 100%;
+@assetsWidth: 39px;
+@columnWidth: 49%;
+@sixHundredBreakPoint: 600px;
+@smartPhoneBreakpoint: 480px;
+@featureTitleMinWidth: 200px;
+@featureTitleSmallestWidth: 160px;
+
+@supportIconHeight: 52px;
+@quotesAssetHeight: 30px;
+@iconContainerHeight: 80px;
+@assetsHeight: 62px;
+@reviewBorderHeight: 1px;
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: @color0;
+  font: 1em/150% Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: customFont;
+  src: url('../fonts/Myriad-Pro_31655.ttf');
+}
+
+.main-container {
+  background-color: @color0;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  width: @maxWidthPercent;
+}
+
+header {
+  background: url('../assets/header-bg.png') no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  height: auto;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  top: 0;
+  width: @maxWidthPercent;
+}
+
+.header-container-content {
+  margin: 0 auto;
+  max-width: @maxContainerWidth;
+  width: @maxWidthPercent;
+}
+
+.header-logo-container {
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 25px;
+  text-align: justify;
+}
+
+.logo {
+  background: url('../assets/logo.png') no-repeat;
+  display: inline-block;
+  height: @assetsHeight;
+  vertical-align: middle;
+  width: 104px;
+}
+
+nav {
+  display: inline-block;
+  float: right;
+  height: 20px;
+  vertical-align: middle;
+  a {
+    color: @color0;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+.header-title {
+  color: @color0;
+  font-family: customFont;
+  font-size: 60px;
+  height: auto;
+  line-height: normal;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.header-subtitle {
+  color: @color0;
+  font-family: customFont;
+  font-size: 30px;
+  height: auto;
+  line-height: normal;
+  margin: 0 auto;
+  max-width: 625px;
+  padding-top: 30px;
+  text-align: center;
+  width: @maxWidthPercent;
+}
+
+.download-button-container {
+  height: @assetsHeight;
+  margin: 0 auto;
+  max-width: @buttonWidth;
+  padding: 38px 0;
+  width: @maxWidthPercent;
+}
+
+.download {
+  background: @color6 url('../assets/button_arrow.png') no-repeat 97% center;
+  border-radius: 10px;
+  border: none;
+  color: @color0;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 16px;
+  width: @buttonWidth;
+}
+
+.download-button {
+  display: inline-block;
+  position: relative;
+  &:hover {
+    .download-content {
+      display: block;
+    }
+    .download {
+      background-color: @color6;
+    }
+  }
+}
+
+.download-content {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  display: none;
+  min-width: @buttonWidth;
+  position: absolute;
+  a {
+    color: @color5;
+    display: block;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-decoration: none;
+    &:hover {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+    }
+  }
+}
+
+.image-display {
+  background: url('../assets/devices.png') no-repeat;
+  background-size: 100% 100%;
+  height: 244px;
+  margin: 0 auto;
+  max-width: 636px;
+  width: @maxWidthPercent;
+}
+
+main {
+  background: @color0;
+  height: auto;
+  margin: 0 auto;
+  width: @maxWidthPercent;
+}
+
+.feature-wrapper {
+  height: 500px;
+  margin: 0 auto;
+  max-width: @maxContainerWidth;
+  width: @maxWidthPercent;
+}
+
+.feature1 {
+  float: left;
+  max-width: @lowResBreakpoint;
+  padding-top: 65px;
+  width: @maxWidthPercent;
+  .icon-holder {
+    background: url('../assets/chat.png');
+    background-size: 100% 100%;
+  }
+}
+
+.feature2 {
+  float: left;
+  max-width: @lowResBreakpoint;
+  padding-top: 65px;
+  width: @maxWidthPercent;
+  .icon-holder {
+
+    background: url('../assets/sync.png');
+    background-size: 100% 100%;
+  }
+}
+
+.feature3 {
+  float: left;
+  max-width: @lowResBreakpoint;
+  padding-top: 65px;
+  width: @maxWidthPercent;
+  .icon-holder {
+    background: url('../assets/history.png');
+    background-size: 100% 100%;
+  }
+}
+
+.icon-holder {
+  height: @iconContainerHeight;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.feature-title {
+  color: @color4;
+  font-family: customFont;
+  font-size: 32px;
+  height: auto;
+  line-height: normal;
+  margin: 0 auto;
+  max-width: 210px;
+  padding-top: 20px;
+  text-align: center;
+  width: @maxWidthPercent;
+}
+
+.feature-description {
+  color: @color3;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0 auto;
+  max-width: 290px;
+  padding-top: 20px;
+  text-align: center;
+  width: @maxWidthPercent;
+}
+
+.customer-review-container {
+  margin: 0 auto;
+  max-width: @maxContainerWidth;
+  width: @maxWidthPercent;
+}
+
+.review-header {
+  font-family: customFont;
+  font-size: 32px;
+  line-height: normal;
+  overflow: hidden;
+  text-align: center;
+  span {
+    display: inline-block;
+    height: auto;
+    padding: 0 15px;
+    position: relative;
+    &:before {
+      background: @color2;
+      content: "";
+      display: block;
+      height: @reviewBorderHeight;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      width: @reviewHeaderWidth;
+    }
+    &:after {
+      background: @color2;
+      content: "";
+      display: block;
+      height: @reviewBorderHeight;
+      left: 100%;
+      position: absolute;
+      top: 50%;
+      width: @reviewHeaderWidth;
+    }
+  }
+}
+
+.review-quote-container {
+  margin: 0 auto;
+  max-width: 690px;
+  padding-top: 15px;
+  width: @maxWidthPercent;
+}
+
+.open-quotes {
+  background: url('../assets/open_quotes.png') no-repeat;
+  height: @quotesAssetHeight;
+  width: @assetsWidth;
+}
+
+.customer-review-text {
+  color: @color3;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.close-quotes {
+  background: url('../assets/close_quotes.png') no-repeat;
+  float: right;
+  height: @quotesAssetHeight;
+  margin-top: -15px;
+  width: @assetsWidth;
+}
+
+.customer-info-container {
+  margin: 0 auto;
+  max-width: 260px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  width: @maxWidthPercent;
+}
+
+.customer-image {
+  background: url('../assets/customer_image.png') no-repeat;
+  display: inline-block;
+  height: 48px;
+  vertical-align: middle;
+  width: 48px;
+}
+
+.customer-name {
+  color: @color4;
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.support-container {
+  background: url('../assets/footer_bg.png') no-repeat;
+  height: auto;
+  margin: 0 auto;
+  width: @maxWidthPercent;
+}
+
+.support-text {
+  color: @color5;
+  font-family: customFont;
+  font-size: 32px;
+  line-height: normal;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.devices-support-container {
+  height: @iconContainerHeight;
+  margin: 0 auto;
+  max-width: 550px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  width: @maxWidthPercent;
+}
+
+.mac, .windows, .linux, .android, .ios  {
+  float: left;
+  max-width: 110px;
+  width: @maxWidthPercent;
+}
+
+.mac-icon {
+  background: url('../assets/mac.png') no-repeat;
+  height: @supportIconHeight;
+  margin: 0 auto;
+  width: @assetsWidth;
+}
+
+.windows-icon {
+  background: url('../assets/windows.png') no-repeat;
+  height: @supportIconHeight;
+  margin: 0 auto;
+  width: 47px;
+}
+
+.linux-icon {
+  background: url('../assets/linux.png') no-repeat;
+  height: @supportIconHeight;
+  margin: 0 auto;
+  width: 52px;
+}
+
+.android-icon {
+  background: url('../assets/android.png') no-repeat;
+  height: @supportIconHeight;
+  margin: 0 auto;
+  width: 65px;
+}
+
+.ios-icon {
+  background: url('../assets/iOS.png') no-repeat;
+  height: @supportIconHeight;
+  margin: 0 auto;
+  width: 31px;
+}
+
+.mac-text, .windows-text, .linux-text, .android-text, .ios-text  {
+  color: #b3b2b2;
+  font-family: customFont;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+footer {
+  background: url('../assets/copyright_bg.png');
+  height: auto;
+  margin: 0 auto;
+  width: @maxWidthPercent;
+}
+
+.page-links {
+  color: @color1;
+  display: inline-block;
+  font-size: 12px;
+  height: inherit;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: @columnWidth;
+  a {
+    color: @color1;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
+
+.copyright-text {
+  color: @color1;
+  display: inline-block;
+  font-size: 12px;
+  height: inherit;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  width: @columnWidth;
+}
+
+@media only screen and (max-width: 980px) {
+  .feature-wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    width: @maxWidthPercent;
+  }
+
+  .feature1 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: @sixHundredBreakPoint;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    width: @maxWidthPercent;
+  }
+
+  .feature2 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: @sixHundredBreakPoint;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    width: @maxWidthPercent;
+  }
+
+  .feature3 {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    max-width: @sixHundredBreakPoint;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 40px;
+    width: @maxWidthPercent;
+  }
+
+  .icon-holder {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .feature-title {
+    display: inline-block;
+    max-width: @smartPhoneBreakpoint;
+    min-width: @smartPhoneBreakpoint;
+    padding-left: 10px;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .feature-description {
+    display: inline-block;
+    max-width: @sixHundredBreakPoint;
+    padding-top: 0;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  p {
+    font-family: "Arial", Helvetica, sans-serif;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .feature-title {
+    max-width: @smartPhoneBreakpoint;
+    min-width: @lowResBreakpoint;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header-title {
+    font-size: 42px;
+    padding-top: 35px;
+  }
+
+  .header-subtitle {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+
+  .feature-title {
+    font-size: 26px;
+    max-width: @lowResBreakpoint;
+    min-width: @lowResBreakpoint;
+  }
+
+  .feature-description {
+    max-width: 580px;
+    width: 100%;
+  }
+
+  .support-text {
+    font-size: 24px;
+    padding-top: 15px;
+  }
+
+  .devices-support-container {
+    height: 24px;
+    max-width: 450px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+  }
+
+  .mac, .windows, .linux, .android, .ios {
+    max-width: 90px;
+  }
+
+  .mac-icon, .linux-icon, .windows-icon, .android-icon, .ios-icon {
+    display: none;
+  }
+
+  .mac-text, .windows-text, .linux-text, .android-text, .ios-text {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-title {
+    font-size: 36px;
+    padding-top: 25px;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+    padding-top: 20px;
+  }
+
+  .image-display {
+    display: none;
+  }
+
+  .feature-wrapper {
+    height: 350px;
+  }
+
+  .feature1, .feature2, .feature3 {
+    padding-top: 20px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+    font-weight: 700;
+    height: auto;
+    max-width: @featureTitleMinWidth;
+    min-width: @featureTitleMinWidth;
+    vertical-align: middle;
+  }
+
+  .feature-description {
+    display: none;
+  }
+
+  .review-header {
+    font-size: 24px;
+  }
+
+  .customer-review-text {
+    font-size: 16px;
+  }
+
+  .support-text {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .devices-support-container {
+    height: 20px;
+    max-width: 300px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+  }
+
+  .mac, .windows, .linux, .android, .ios {
+    max-width: 60px;
+  }
+
+  .mac-text, .windows-text, .linux-text, .android-text, .ios-text {
+    font-size: 14px;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .header-title {
+    font-size: 28px;
+    padding-top: 15px;
+  }
+
+  .header-subtitle {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+
+  .image-display {
+    display: none;
+  }
+
+  .feature-title {
+    font-size: 18px;
+    font-weight: 700;
+    height: auto;
+    max-width: @featureTitleSmallestWidth;
+    min-width: @featureTitleSmallestWidth;
+    vertical-align: middle;
+  }
+
+  .review-header {
+    font-size: 20px;
+  }
+
+  .customer-review-text {
+    font-size: 14px;
+  }
+}

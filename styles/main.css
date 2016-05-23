@@ -1,0 +1,615 @@
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #ffffff;
+	font: 1em/150% Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: customFont;
+	src: url('../fonts/Myriad-Pro_31655.ttf');
+}
+
+.main-container {
+	background-color: #ffffff;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1500px;
+	width: 100%;
+}
+ header {
+	background: url('../assets/header-bg.png') no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	height: auto;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.header-container-content {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.header-logo-container {
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.logo {
+	background: url('../assets/logo.png') no-repeat;
+	height: 62px;
+	width: 104px;
+	display: inline-block;
+	vertical-align: middle;
+}
+ nav{
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.header-title {
+	padding-top: 50px;
+	font-size: 60px;
+	color: #ffffff;
+	text-align: center;
+	height: auto;
+	line-height: normal;
+	font-family: customFont;
+}
+
+.header-subtitle {
+	padding-top: 30px;
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	height: auto;
+	line-height: normal;
+	font-family: customFont;
+	max-width: 625px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.download-button-container {
+	max-width: 312px;
+	width: 100%;
+	height: 62px;
+	margin: 0 auto;
+	padding: 38px 0;
+}
+
+.download {
+	background: #63bf27 url('../assets/button_arrow.png') no-repeat 97% center;
+	color: #ffffff;
+	width: 312px;
+	padding: 16px;
+	font-size: 22px;
+	font-weight: 600;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.download-button {
+	position: relative;
+	display: inline-block;
+}
+
+.download-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	min-width: 312px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.download-content a {
+	color: #000000;
+	font-size: 14px;
+	padding: 8px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.download-content a:hover {
+	background-color: #f1f1f1;
+	border-radius: 10px;
+}
+
+.download-button:hover .download-content {
+	display: block;
+}
+
+.download-button:hover .download {
+	background-color: #63bf27;
+}
+
+.image-display {
+	background: url('../assets/devices.png') no-repeat;
+	background-size: 100% 100%;
+	max-width: 636px;
+	width: 100%;
+	height: 244px;
+	margin: 0 auto;
+}
+
+main {
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	margin: 0 auto
+}
+
+.feature-wrapper {
+	max-width: 960px;
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.feature1, .feature2, .feature3 {
+	max-width: 320px;
+	width: 100%;
+	float: left;
+	padding-top: 65px;
+}
+
+.icon-holder {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.feature1 .icon-holder {
+	background: url('../assets/chat.png');
+	background-size: 100% 100%;
+}
+
+.feature2 .icon-holder {
+	background: url('../assets/sync.png');
+	background-size: 100% 100%;
+}
+
+.feature3 .icon-holder {
+	background: url('../assets/history.png');
+	background-size: 100% 100%;
+}
+
+.feature-title {
+	font-size: 32px;
+	color: #303030;
+	font-family: customFont;
+	text-align: center;
+	max-width: 210px;
+	width: 100%;
+	height: auto;
+	line-height: normal;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.feature-description {
+	font-size: 14px;
+	color: #6d6d6d;
+	text-align: center;
+	line-height: normal;
+	max-width: 290px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	font-family: "Arial", Helvetica, sans-serif;
+}
+
+.customer-review-container {
+	max-width: 960px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.review-header {
+	font-size: 32px;
+	font-family: customFont;
+	text-align: center;
+	overflow: hidden;
+	line-height: normal;
+}
+
+.review-header span {
+	display: inline-block;
+	padding: 0 15px;
+	position: relative;
+	height: auto;
+}
+
+.review-header span:before,
+.review-header span:after {
+	background: #ddd;
+	content: "";
+	display: block;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	width: 400%;
+}
+.review-header span:before {
+	right: 100%;
+}
+.review-header span:after {
+	left: 100%;
+}
+
+.review-quote-container {
+	max-width: 690px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+}
+
+.open-quotes {
+	background: url('../assets/open_quotes.png') no-repeat;
+	width: 39px;
+	height: 30px;
+}
+
+.customer-review-text {
+	font-size: 18px;
+	color: #6d6d6d;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.close-quotes {
+	background: url('../assets/close_quotes.png') no-repeat;
+	width: 39px;
+	height: 30px;
+	float: right;
+	margin-top: -15px;
+}
+
+.customer-info-container {
+	max-width: 260px;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.customer-image {
+	background: url('../assets/customer_image.png');
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.customer-name {
+	font-size: 14px;
+	color: #303030;
+	text-align: left;
+	display: inline-block;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+.support-container {
+	width: 100%;
+	height: auto;
+	background: url('../assets/footer_bg.png') no-repeat;
+	margin: 0 auto;
+}
+
+.support-text {
+	font-size: 32px;
+	font-family: customFont;
+	color: #000000;
+	text-align: center;
+	padding-top: 40px;
+	line-height: normal;
+}
+
+.devices-support-container {
+	max-width: 550px;
+	width: 100%;
+	margin: 0 auto;
+	height: 80px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.mac, .windows, .linux, .android, .ios {
+	max-width: 110px;
+	width: 100%;
+	float: left;
+}
+
+.mac-icon {
+	background: url('../assets/mac.png') no-repeat;
+	width: 39px;
+	height: 52px;
+	margin: 0 auto;
+}
+
+.windows-icon {
+	background: url('../assets/windows.png') no-repeat;
+	width: 47px;
+	height: 52px;
+	margin: 0 auto;
+}
+
+.linux-icon {
+	background: url('../assets/linux.png') no-repeat;
+	width: 52px;
+	height: 52px;
+	margin: 0 auto;
+}
+
+.android-icon {
+	background: url('../assets/android.png') no-repeat;
+	width: 65px;
+	height: 52px;
+	margin: 0 auto;
+}
+
+.ios-icon {
+	background: url('../assets/iOS.png') no-repeat;
+	width: 31px;
+	height: 52px;
+	margin: 0 auto;
+}
+
+.mac-text, .windows-text, .linux-text, .android-text, .ios-text {
+	font-size: 18px;
+	color: #b3b2b2;
+	font-family: customFont;
+	text-align: center;
+	margin-top: 10px;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	background: url('../assets/copyright_bg.png');
+	margin: 0 auto;
+}
+
+.page-links, .copyright-text {
+	width: 49%;
+	display: inline-block;
+	height: inherit;
+	margin: auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #989797;
+	line-height: normal;
+}
+
+.page-links a {
+	font-size: 12px;
+	color: #989797;
+	line-height: normal;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 980px) {
+	.feature-wrapper {
+		max-width: 768px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.feature1, .feature2, .feature3 {
+		float: none;
+		max-width: 600px;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.icon-holder {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.feature-title {
+		display: inline-block;
+		max-width: 480px;
+		min-width: 480px;
+		padding-top: 0;
+		padding-left: 10px;
+		vertical-align: top;
+		text-align: left;
+	}
+	.feature-description {
+		display: inline-block;
+		max-width: 600px;
+		vertical-align: middle;
+		padding-top: 0;
+		text-align: left;	
+	}
+
+	p {
+		font-family: "Arial", Helvetica, sans-serif;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.feature-title {
+		max-width: 480px;
+		min-width: 320px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.header-title {
+		font-size: 42px;
+		padding-top: 35px;
+	}
+
+	.header-subtitle {
+		font-size: 28px;
+		padding-top: 20px;
+	}
+
+	.feature-title {
+		font-size: 26px;
+		max-width: 320px;
+		min-width: 320px;
+	}
+
+	.feature-description {
+		max-width: 580px;
+		width: 100%;
+	}
+
+	.support-text {
+		font-size: 24px;
+		padding-top: 15px;
+	}
+
+	.devices-support-container {
+		max-width: 450px;
+		height: 24px;
+		padding-top: 20px;
+		padding-bottom: 15px;
+	}
+
+	.mac, .windows, .linux, .android, .ios {
+		max-width: 90px;
+	}
+
+	.mac-icon, .linux-icon, .windows-icon, .android-icon, .ios-icon {
+		display: none;
+	}
+
+	.mac-text, .windows-text, .linux-text, .android-text, .ios-text {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.header-title {
+		font-size: 36px;
+		padding-top: 25px;
+	}
+
+	.header-subtitle {
+		font-size: 24px;
+		padding-top: 20px;
+	}
+
+	.image-display {
+		display: none;
+	}
+
+	.feature-wrapper {
+		height: 350px;
+	}
+
+	.feature1, .feature2, .feature3 {
+		padding-top: 20px;
+	}
+
+	.feature-title {
+		font-size: 18px;
+		height: auto;
+		max-width: 200px;
+		min-width: 200px;
+		vertical-align: middle;
+		font-weight: 700;
+	}
+
+	.feature-description {
+		display: none;
+	}
+
+	.review-header {
+		font-size: 24px;
+	}
+
+	.customer-review-text {
+		font-size: 16px;
+	}
+
+	.support-text {
+		font-size: 20px;
+		padding-top: 10px;
+	}
+
+	.devices-support-container {
+		max-width: 300px;
+		height: 20px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+	}
+
+	.mac, .windows, .linux, .android, .ios {
+		max-width: 60px;
+	}
+
+	.mac-text, .windows-text, .linux-text, .android-text, .ios-text {
+		font-size: 14px;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.header-title {
+		font-size: 28px;
+		padding-top: 15px;
+	}
+
+	.header-subtitle {
+		font-size: 18px;
+		padding-top: 10px;
+	}
+
+	.image-display {
+		display: none;
+	}
+
+	.feature-title {
+		font-size: 18px;
+		height: auto;
+		max-width: 160px;
+		min-width: 160px;
+		vertical-align: middle;
+		font-weight: 700;
+	}
+
+	.review-header {
+		font-size: 20px;
+	}
+
+	.customer-review-text {
+		font-size: 14px;
+	}
+}
